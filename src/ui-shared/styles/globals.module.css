@@ -1,0 +1,22 @@
+:root {
+  --bgPrimary: #151c2c;
+  --bgSecondary: #182237;
+  --textPrimary: white;
+  --textSecondary: #b7bac1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bgPrimary);
+  color: var(--textPrimary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
