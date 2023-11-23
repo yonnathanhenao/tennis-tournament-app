@@ -1,7 +1,6 @@
 .container {
     padding: 20px;
-    border-radius: 10px;
-    background-color: var(--bgSoft);
+    background-color: var(--bgPrimary);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,22 +18,26 @@
     gap: 20px;
 }
 
-.search {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #2e374a;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.input {
-    background-color: transparent;
-    border: none;
-    color: var(--text);
-}
-
 .icons {
     display: flex;
     gap: 20px;
+}
+
+.logout {
+    padding: 4px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+
+.logout:hover {
+    background-color: var(--bgSecondary);
 }

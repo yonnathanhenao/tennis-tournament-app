@@ -22,7 +22,10 @@ export async function saveTournament(_, formData) {
 
 export async function fetchTournaments(): Promise<Tournament[]> {
   try {
-    return await getTournaments();
+    const tournaments = await getTournaments();
+    // if (!tournaments?.data) {
+    // }
+    return tournaments.data;
   } catch (error) {
     console.log("error", error);
     return [];
