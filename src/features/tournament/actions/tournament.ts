@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 
 import { validateForm } from "@/utils/form";
 import { IFormState } from "../constants/types";
-import { Tournament, TournamentDto } from "../core/models/tournament";
+import { Tournament } from "../core/models/tournament.model";
 import {
   createTournament,
   deleteTournament,
@@ -13,6 +13,7 @@ import {
   getTournaments,
   updateTournament,
 } from "../core/services/tournament.service";
+import { TournamentDto } from "../core/dto/tournament.dto";
 
 export async function fetchTournaments(): Promise<Tournament[]> {
   try {

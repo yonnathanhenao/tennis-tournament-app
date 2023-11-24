@@ -1,7 +1,8 @@
 "use client";
 
+import { logout } from "@/features/user/actions/user";
+import { MdLogout, MdNotifications } from "react-icons/md";
 import styles from "./styles.module.css";
-import { MdNotifications, MdLogout } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
       <div className={styles.icons}>
         <MdNotifications size={20} />
       </div>
-      <form action={async () => {}}>
+      <form action={logout}>
         <button className={styles.logout}>
           <MdLogout />
           Salir

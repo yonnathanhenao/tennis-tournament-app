@@ -3,7 +3,7 @@ import { useFormState } from "react-dom";
 
 import { PrimaryButton } from "@/ui-shared/components/button/Button";
 import styles from "./styles.module.css";
-import { Tournament } from "@/features/tournament/core/models/tournament";
+import { Tournament } from "@/features/tournament/core/models/tournament.model";
 import { IFormState } from "@/features/tournament/constants/types";
 
 type TournamentFormProps = {

@@ -3,7 +3,11 @@
 import Link from "next/link";
 
 import { handleDeleteTournament } from "@/features/tournament/actions/tournament";
-import { Button, PrimaryButton } from "@/ui-shared/components/button/Button";
+import {
+  Button,
+  ButtonColor,
+  PrimaryButton,
+} from "@/ui-shared/components/button/Button";
 import styles from "./styles.module.css";
 
 function TournamentList({ data }) {
@@ -36,7 +40,7 @@ function TournamentList({ data }) {
                   </Link>
                   <form action={handleDeleteTournament}>
                     <input type="hidden" name="id" value={item._id} />
-                    <Button text="Eliminar" color={styles.deleteButton} />
+                    <Button text="Eliminar" color={ButtonColor.red} />
                   </form>
                 </div>
               </td>

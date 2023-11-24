@@ -4,6 +4,7 @@
   --bgSecondary: #37474F;
   --textPrimary: white;
   --textSecondary: #b7bac1;
+  --error: #EF5350;
 }
 
 * {

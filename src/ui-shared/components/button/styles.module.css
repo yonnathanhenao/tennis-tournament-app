@@ -1,7 +1,5 @@
 .button {
-    height: 40px;
     padding: 0 24px;
-    background-color: var(--primary);
     color: var(--textPrimary);
     border: none;
     border-radius: 5px;
@@ -14,4 +12,20 @@
 
 .secondary {
     background-color: var(--secondary);
+}
+
+.red {
+    background-color: var(--error);
+}
+
+.small {
+    height: 24px;
+}
+
+.medium {
+    height: 32px;
+}
+
+.large {
+    height: 40px;
 }
