@@ -1,0 +1,33 @@
+.container {
+    padding: 16px;
+    background-color: var(--bgPrimary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.logout {
+    padding: 4px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+
+.logout:hover {
+    background-color: var(--bgSecondary);
+}

@@ -1,0 +1,38 @@
+.formContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 24px;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.formInput input,
+.formInput textarea,
+.formInput select {
+    padding: 8px;
+    background-color: var(--bgPrimary);
+    color: var(--textPrimary);
+    border: 2px solid #b7bac1;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formActions button {
+    height: 40px;
+    padding: 0 24px;
+    background-color: #1E88E5;
+    color: var(--textPrimary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.labelError {
+    color: #EF5350;
+}
