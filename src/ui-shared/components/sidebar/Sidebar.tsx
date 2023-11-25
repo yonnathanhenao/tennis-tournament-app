@@ -1,7 +1,7 @@
 import {
   MdAccountCircle,
   MdDashboard,
-  MdShoppingBag,
+  MdSportsTennis,
   MdSupervisedUserCircle,
 } from "react-icons/md";
 
@@ -24,7 +24,7 @@ const menuItems = [
   {
     title: "Torneos",
     path: "/tournaments",
-    icon: <MdShoppingBag />,
+    icon: <MdSportsTennis />,
   },
 ];
 

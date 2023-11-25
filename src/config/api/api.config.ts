@@ -7,7 +7,7 @@ export default class ApiConfig {
   private headers: HeadersInit;
 
   private constructor() {
-    this.basePath = "http://localhost:3000";
+    this.basePath = process.env.API_BASE_PATH as string;
     this.headers = {
       Accept: "application/json",
       "Content-Type": "application/json",

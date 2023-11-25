@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { cookies } from "next/headers";
 import { Inter } from "next/font/google";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
+import { useAuth } from "@/hooks/auth";
 import Footer from "@/ui-shared/components/footer/Footer";
 import Navbar from "@/ui-shared/components/navbar/Navbar";
 import Sidebar from "@/ui-shared/components/sidebar/Sidebar";
-import { useAuth } from "@/hooks/auth";
-import styles from "./styles.module.css";
 import "@/ui-shared/styles/globals.css";
-import { redirect } from "next/navigation";
+import styles from "./styles.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

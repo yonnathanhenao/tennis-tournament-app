@@ -25,9 +25,9 @@ function Button({
   color = ButtonColor.prymary,
   size = ButtonSize.medium,
 }: IButtonProps) {
-  console.log("color", color);
   let buttonColor;
   let buttonSize;
+
   switch (color) {
     case ButtonColor.prymary:
       buttonColor = styles.primary;
