@@ -6,7 +6,7 @@ import { authenticate } from "../../actions/auth.actions";
 import styles from "./styles.module.css";
 
 function LoginForm() {
-  const [state, formAction] = useFormState(authenticate, null);
+  const [_, formAction] = useFormState(authenticate, null);
 
   return (
     <div className={styles.container}>
