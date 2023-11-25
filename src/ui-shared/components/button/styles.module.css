@@ -1,9 +1,17 @@
+.container {
+    width: inherit;
+}
+
 .button {
     padding: 0 24px;
     color: var(--textPrimary);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.fullWidth {
+    width: 100%;
 }
 
 .primary {

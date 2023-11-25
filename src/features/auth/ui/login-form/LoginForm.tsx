@@ -2,6 +2,8 @@
 
 import { useFormState, useFormStatus } from "react-dom";
 
+import { PrimaryButton } from "@/ui-shared/components/button/Button";
+import inputStyles from "@/ui-shared/components/text-field/style.module.css";
 import { authenticate } from "../../actions/auth.actions";
 import styles from "./styles.module.css";
 
@@ -11,11 +13,17 @@ function LoginForm() {
   return (
     <div className={styles.container}>
       <form action={formAction} className={styles.form}>
-        <label htmlFor="email">Nombre</label>
-        <input type="text" name="email" />
-        <label htmlFor="password">Password</label>
-        <input type="text" name="password" />
-        <LoginButton />
+        <h1>Iniciar sesión</h1>
+        <div className={inputStyles.formInput}>
+          <label htmlFor="email">Correo</label>
+          <input type="email" name="email" required />
+        </div>
+        <div className={inputStyles.formInput}>
+          <label htmlFor="password">Contraseña</label>
+          <input type="password" name="password" required />
+        </div>
+        <br />
+        <PrimaryButton text="Ingresar" fullWidth />
       </form>
     </div>
   );

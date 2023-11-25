@@ -9,4 +9,11 @@
 .form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--bgSecondary);
+    width: 30%;
+    padding: 32px;
+    border-radius: 16px;
+    height: 400px;
 }

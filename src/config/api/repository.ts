@@ -31,7 +31,6 @@ export default class Repository {
   async post(endpoint: string, body: unknown): Promise<unknown> {
     const url = `${this.apiConfig.basePath}${endpoint}`;
     const headers = this.apiConfig.getHeaders();
-
     try {
       const response = await fetch(url, {
         method: "POST",

@@ -14,6 +14,7 @@ export enum ButtonSize {
 
 type IButtonProps = {
   text: string;
+  fullWidth?: boolean;
   color?: ButtonColor;
   size?: ButtonSize;
   onClick?: () => void;
@@ -24,6 +25,7 @@ function Button({
   onClick,
   color = ButtonColor.prymary,
   size = ButtonSize.medium,
+  fullWidth = false,
 }: IButtonProps) {
   let buttonColor;
   let buttonSize;
@@ -60,7 +62,12 @@ function Button({
   return (
     <div>
       <button
-        className={[styles.button, buttonColor, buttonSize].join(" ").trimEnd()}
+        className={[
+          styles.button,
+          buttonColor,
+          buttonSize,
+          fullWidth ? styles.fullWidth : "",
+        ].join(" ")}
         onClick={onClick}
       >
         {text}
@@ -69,12 +76,26 @@ function Button({
   );
 }
 
-function PrimaryButton({ text, onClick }: IButtonProps) {
-  return <Button text={text} onClick={onClick} color={ButtonColor.prymary} />;
+function PrimaryButton({ text, onClick, fullWidth }: IButtonProps) {
+  return (
+    <Button
+      text={text}
+      onClick={onClick}
+      color={ButtonColor.prymary}
+      fullWidth={fullWidth}
+    />
+  );
 }
 
-function SecondaryButton({ text, onClick }: IButtonProps) {
-  return <Button text={text} onClick={onClick} color={ButtonColor.secondary} />;
+function SecondaryButton({ text, onClick, fullWidth }: IButtonProps) {
+  return (
+    <Button
+      text={text}
+      onClick={onClick}
+      color={ButtonColor.secondary}
+      fullWidth={fullWidth}
+    />
+  );
 }
 
 export { Button, PrimaryButton, SecondaryButton };
