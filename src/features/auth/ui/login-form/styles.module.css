@@ -4,16 +4,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    background-color: var(--bgSecondary);
+    width: 30%;
+    padding: 32px;
+    border-radius: 16px;
+    min-height: 400px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
-    background-color: var(--bgSecondary);
-    width: 30%;
-    padding: 32px;
-    border-radius: 16px;
-    height: 400px;
+    width: 100%;
+
 }

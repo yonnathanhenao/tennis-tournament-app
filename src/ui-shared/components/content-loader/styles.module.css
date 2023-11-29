@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bgSecondary);
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.loading {
+    position: absolute;
+    left: -45%;
+    height: 100%;
+    width: 45%;
+    background-image: linear-gradient(to left, rgba(64, 81, 89, .05), rgba(64, 81, 89, .3), rgba(64, 81, 89, .6), rgba(64, 81, 89, .3), rgba(64, 81, 89, .05));
+    background-image: -moz-linear-gradient(to left, rgba(64, 81, 89, .05), rgba(64, 81, 89, .3), rgba(64, 81, 89, .6), rgba(64, 81, 89, .3), rgba(64, 81, 89, .05));
+    background-image: -webkit-linear-gradient(to left, rgba(64, 81, 89, .05), rgba(64, 81, 89, .3), rgba(64, 81, 89, .6), rgba(64, 81, 89, .3), rgba(64, 81, 89, .05));
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        left: -45%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

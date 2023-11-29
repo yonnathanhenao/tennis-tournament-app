@@ -13,7 +13,7 @@ import Link from "next/link";
 const menuItems = [
   {
     title: "Dashboard",
-    path: "/admin",
+    path: "/dashboard",
     icon: <MdDashboard />,
   },
   {
@@ -35,7 +35,7 @@ type SidebarProps = {
 const Sidebar = async ({ user }: SidebarProps) => {
   return (
     <div className={styles.container}>
-      <Link href={"/admin"}>
+      <Link href={"/dashboard"}>
         <div className={styles.user}>
           <MdAccountCircle className={styles.userIcon} />
           <div className={styles.userDetail}>

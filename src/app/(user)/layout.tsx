@@ -27,7 +27,7 @@ export default function UserLayout({
     return redirect("/login");
   }
   if (user?.isAdmin) {
-    return redirect("/admin");
+    return redirect("/dashboard");
   }
   return (
     <html lang="en">

@@ -14,6 +14,7 @@ export enum ButtonSize {
 
 type IButtonProps = {
   text: string;
+  disabled?: boolean;
   fullWidth?: boolean;
   color?: ButtonColor;
   size?: ButtonSize;
@@ -26,6 +27,7 @@ function Button({
   color = ButtonColor.prymary,
   size = ButtonSize.medium,
   fullWidth = false,
+  disabled,
 }: IButtonProps) {
   let buttonColor;
   let buttonSize;
@@ -69,6 +71,8 @@ function Button({
           fullWidth ? styles.fullWidth : "",
         ].join(" ")}
         onClick={onClick}
+        disabled={disabled}
+        aria-disabled={disabled}
       >
         {text}
       </button>
@@ -76,23 +80,25 @@ function Button({
   );
 }
 
-function PrimaryButton({ text, onClick, fullWidth }: IButtonProps) {
+function PrimaryButton({ text, onClick, fullWidth, disabled }: IButtonProps) {
   return (
     <Button
       text={text}
       onClick={onClick}
       color={ButtonColor.prymary}
+      disabled={disabled}
       fullWidth={fullWidth}
     />
   );
 }
 
-function SecondaryButton({ text, onClick, fullWidth }: IButtonProps) {
+function SecondaryButton({ text, onClick, fullWidth, disabled }: IButtonProps) {
   return (
     <Button
       text={text}
       onClick={onClick}
       color={ButtonColor.secondary}
+      disabled={disabled}
       fullWidth={fullWidth}
     />
   );
